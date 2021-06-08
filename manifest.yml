@@ -2,5 +2,5 @@
 applications:
 - name: sapcpcfhw
   path: .
-  buildpack: nodejs_buildpack
+  buildpack: node_modules
   memory: 128M
