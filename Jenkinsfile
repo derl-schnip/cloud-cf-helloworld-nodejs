@@ -5,6 +5,7 @@ node() {
         setupCommonPipelineEnvironment script:this
     }
     stage('build') {
-        mtaBuild script: this
+      mbt init 
+      make -f Makefile.mta p=cf
     }
 }
