@@ -8,4 +8,7 @@ node() {
       bat 'mbt init'
       bat 'mbt build -p cf'
     }
+    stage('deploy') {
+      cloudFoundryDeploy script: this
+    }
 }
