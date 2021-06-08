@@ -6,6 +6,6 @@ node() {
     }
     stage('build') {
       bat 'mbt init'
-      bat 'make -f Makefile.mta p=cf'
+      bat 'mbt build -p cf'
     }
 }
